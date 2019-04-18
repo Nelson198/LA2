@@ -6,14 +6,14 @@ O objectivo deste problema é encontrar o caminho através de um labirinto. Irá
 
 10  
 &nbsp;&nbsp;&nbsp;&nbsp;########  
-#&nbsp;&nbsp;#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  
+#&nbsp;&nbsp;#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #  
 #&nbsp;&nbsp;#&nbsp;&nbsp;####&nbsp;&nbsp;#  
-#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  
+#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #  
 #&nbsp;&nbsp;#&nbsp;&nbsp;#&nbsp;&nbsp;####  
-#&nbsp;&nbsp;#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  
-#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;#  
+#&nbsp;&nbsp;#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #  
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp; #  
 #####&nbsp;&nbsp;####  
-#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#  
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #  
 ########&nbsp;&nbsp;&nbsp;&nbsp;  
 
 **Saída correspondente:**  
