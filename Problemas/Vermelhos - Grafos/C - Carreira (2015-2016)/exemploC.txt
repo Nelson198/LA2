@@ -1,0 +1,6 @@
+Caminha Lisboa
+Porto 20 Lisboa
+Braga 3 Barcelos 4 Viana 3 Caminha
+Braga 3 Famalicao 3 Porto
+Viana 4 Povoa 3 Porto
+Lisboa 10 Evora 8 Beja 8 Faro

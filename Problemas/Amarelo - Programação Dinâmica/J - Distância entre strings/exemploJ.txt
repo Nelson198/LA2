@@ -1,0 +1,3 @@
+exponential
+polynomial
+sequential
