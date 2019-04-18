@@ -3,7 +3,7 @@ import sys
 def distance(p1, p2):
 	return (p1[0] - p2[0])**2 + (p1[1] - p2[1])**2
 
-""" --------------------------------------------------------------------------------- TRAVESSIA POR NÍVEIS ------------------------------------------------------------------------------ """
+# <------------------------------------------- Travessia por níveis ------------------------------------------>
 def bfs(o, d, boardSize):
 	discovered = []
 	queue = []
@@ -44,16 +44,18 @@ def bfs(o, d, boardSize):
 
 	return -1
 
-""" ---------------------------------------------------------------------------------------- MAIN --------------------------------------------------------------------------------------- """
-boardSize = int(sys.stdin.readline().strip())
+def main():
+	boardSize = int(sys.stdin.readline().strip())
 
-for coords in sys.stdin:
-	coords = coords.strip().split()
-	coords = list(map(int,coords))
-	point0 = (coords[0],coords[1])
-	point1 = (coords[2],coords[3])
-	if (point0 in [(0,0), (0,boardSize-1), (boardSize-1,0), (boardSize-1,boardSize-1)] or point1 in [(0,0), (0,boardSize-1), (boardSize-1,0), (boardSize-1,boardSize-1)]) and abs(coords[2]-coords[0]) == 1 and abs(coords[3]-coords[1]) == 1:
-		print(4)
-	else:
-		numMovements = bfs(point0, point1, boardSize)
-		print(numMovements)
+	for coords in sys.stdin:
+		coords = coords.strip().split()
+		coords = list(map(int,coords))
+		point0 = (coords[0],coords[1])
+		point1 = (coords[2],coords[3])
+		if (point0 in [(0,0), (0,boardSize-1), (boardSize-1,0), (boardSize-1,boardSize-1)] or point1 in [(0,0), (0,boardSize-1), (boardSize-1,0), (boardSize-1,boardSize-1)]) and abs(coords[2]-coords[0]) == 1 and abs(coords[3]-coords[1]) == 1:
+			print(4)
+		else:
+			numMovements = bfs(point0, point1, boardSize)
+			print(numMovements)
+
+main()

@@ -31,11 +31,14 @@ def aux(adj,k,c,l):
         c.pop(i)
     return False
 
-adj = {}
-parse(adj)
+def main():
+    adj = {}
+    parse(adj)
 
-i = 1
-while search(adj,i) == None:
-    i+=1
+    i = 1
+    while search(adj,i) == None:
+        i+=1
 
-print(i)
+    print(i)
+
+main()

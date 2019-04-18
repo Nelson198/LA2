@@ -4,7 +4,7 @@ Neste problema deve apresentar a pauta com a avaliação dos alunos de uma disci
 
 O formato dos dados de entrada é um conjunto de linhas contendo o número e nome dos alunos inscritos separados por um espaço, seguido de uma linha contendo unicamente o carácter -, seguido por último de um conjunto de linhas contendo número e nota do exame separados por espaço. Pode assumir que só poderá aparecer uma nota por número, e que todas as notas correspondem a alunos inscritos.
 
-Exemplo de entrada:  
+**Exemplo de entrada:**  
 
 11111 Jose Oliveira  
 22222 Francisco Pinto  
@@ -13,7 +13,7 @@ Exemplo de entrada:
 33333 12.3  
 22222 8.2  
 
-Saída correspondente:  
+**Saída correspondente:**  
 
 22222 Francisco Pinto : R  
 11111 Jose Oliveira : F  

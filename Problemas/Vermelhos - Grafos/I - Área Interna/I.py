@@ -1,6 +1,6 @@
 import sys
 
-""" ---------------------------------------------------------------------------- CONSTRUTOR DA LISTA DE ADJACÊNCIAS ------------------------------------------------------------ """
+# <------------------------------------ Construtor da lista de adjacências ----------------------------------->
 def parse(lista, adj):
 	maxx = len(lista)
 	for x in range(len(lista)):
@@ -17,7 +17,7 @@ def parse(lista, adj):
 				if lista[x][y+1] == ' ':
 					adj[(x,y)].append((x, y+1))
 
-""" ---------------------------------------------------------------------------- TRAVESSIA EM PROFUNDIDADE --------------------------------------------------------------------- """
+# <---------------------------------------- Travessia em Profundidade ---------------------------------------->
 def dfs_aux(adj, o, discovered, parent):
 	discovered.append(o)
 	for d in adj[o]:
@@ -29,14 +29,16 @@ def dfs_aux(adj, o, discovered, parent):
 def dfs(adj, o):
 	return dfs_aux(adj, o, [], {})
 
-""" ---------------------------------------------------------------------------------------- MAIN ------------------------------------------------------------------------------ """
-adj = {}
-lista = []
-y, x = map(int, sys.stdin.readline().rstrip().split())
-for l in sys.stdin:
-	l = list(l.rstrip())
-	lista.append(l)
+def main():
+	adj = {}
+	lista = []
+	y, x = map(int, sys.stdin.readline().rstrip().split())
+	for l in sys.stdin:
+		l = list(l.rstrip())
+		lista.append(l)
 
-parse(lista, adj)
-print(dfs(adj, (x,y)))
-print(len(dfs(adj, (x,y))) + 1)									
+	parse(lista, adj)
+	#print(dfs(adj, (x,y)))
+	print(len(dfs(adj, (x,y))) + 1)
+
+main()								

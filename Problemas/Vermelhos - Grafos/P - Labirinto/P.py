@@ -1,6 +1,6 @@
 import sys
 
-""" ---------------------------------------------------------------------------- CONSTRUTOR DA LISTA DE ADJACÊNCIAS --------------------------------------------------------------------- """
+# <------------------------------------ Construtor da lista de adjacências ----------------------------------->
 def parse(lista, dimensao):
 	adj = {}
 	xmin = ymin = 0
@@ -24,7 +24,7 @@ def parse(lista, dimensao):
 
 	return adj
 
-""" --------------------------------------------------------------------------------- TRAVESSIA POR NÍVEIS ------------------------------------------------------------------------------ """
+# <------------------------------------------- Travessia por níveis ------------------------------------------>
 def bfs(adj,o):
 	parent = {}
 	discovered = []
@@ -40,7 +40,6 @@ def bfs(adj,o):
 				queue.append(n)
 	return parent
 
-""" ---------------------------------------------------------------------------------------- MAIN --------------------------------------------------------------------------------------- """
 def main():
 	dimensao = int(sys.stdin.readline())
 	lista = []
@@ -64,7 +63,7 @@ def main():
 		destino = parent[destino]
 		path.insert(0,destino)
 
-	print(path)
+	#print(path)
 	print(len(path)-1)
 
 main()

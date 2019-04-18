@@ -27,21 +27,23 @@ def aux(u,c,k,s):
         s.pop()
     return False
 
-m = 0
-c = []
-u = set()
+def main():
+    m = 0
+    c = []
+    u = set()
+    for l in sys.stdin:
+        l = set(map(int, l.split()))
+        c.append(l)
+        for i in l:
+            if i > m:
+                m = i
 
-for l in sys.stdin:
-    l = set(map(int, l.split()))
-    c.append(l)
-    for i in l:
-        if i > m:
-            m = i
+    u = set(x for x in range(1, m+1))
 
-u = set(x for x in range(1, m+1))
+    i = 1
+    while search(u,c,i) == None:
+        i = i+1
 
-i = 1
-while search(u,c,i) == None:
-    i = i+1
+    print(i)
 
-print(i)
+main()
