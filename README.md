@@ -1,3 +1,4 @@
+# Licenciatura em Ciências da Computação - UMinho
 # Laboratório de Algoritmia 2 - 2017/2018
 
 Esta é uma unidade curricular onde se explora vários temas a nível algorítmico.  
